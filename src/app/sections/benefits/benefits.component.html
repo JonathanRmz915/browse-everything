@@ -1,0 +1,53 @@
+<section id="benefits" class="container mx-10 px-[15px] sm:px-[15px] py-16 sm:py-24 margin-top">
+
+    <div class="mb-24">
+        <p class="text-sm subtle mb-10 text-center sm:text-left">Benefits</p>
+        <p class="text-xxl title mb-7 sm:mb-10 text-center sm:text-left">We’ve cracked the code.</p>
+        <p class="mt-3 subtle max-w-2xl text-center sm:text-left">Area provides real insights, without the data overload.</p>
+        <div class="mt-7 flex justify-center sm:justify-start">
+            <a class="btn" href="#howto">Discover More</a>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+        <div class="margin-top" *ngFor="let item of benefitList">
+            <article class="pt-10">
+                <div class="icon mb-4"></div>
+                <h3 class="title text-md mb-2">{{ item.title }}</h3>
+                <p class="text-info">{{ item.description }}</p>
+            </article>
+        </div>
+    </div>
+
+    <figure class="mb-24">
+        <img
+                alt="A image that shows a mountain range"
+                loading="lazy"
+                class="w-full h-[620px] rounded-[30px] object-cover"
+                src="https://plugin-value-scrum.figma.site/_assets/v11/27594e92b9b432843319210cddc6514b6ee87450.png"
+                sizes="auto,100vw" />
+    </figure>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 margin-top">
+        <div>
+            <p class="text-xxl title my-10">See the Big Picture</p>
+            <p class="mt-3 subtle max-w-2xl mb-8 text-info">
+                Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.
+            </p>
+
+            <div class="flex items-start gap-6 text-info margin-top py-5" *ngFor="let item of bigPictureList; let idx = index">
+                <span class="title  text-md">{{ (idx + 1) | number:'2.0-0' }}</span>
+                <span>{{ item }}</span>
+            </div>
+        </div>
+
+        <figure class="lg:order-last">
+            <img
+                    loading="lazy"
+                    class="rounded-[30px] w-full h-[711px] object-cover"
+                    src="https://plugin-value-scrum.figma.site/_assets/v11/8c5a21adadebacbd69375684275fb89819b4d967.png"
+                    sizes="auto,100vw"
+                    alt=""/>
+        </figure>
+    </div>
+</section>
