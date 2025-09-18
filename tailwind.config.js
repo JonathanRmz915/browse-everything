@@ -15,7 +15,7 @@ module.exports = {
                 ink: '#0f0f0f',
                 muted: '#6b7280'
             },
-            borderRadius: { '30': '30px' }, // para imágenes/clips exactos
+            borderRadius: { '30': '30px' },
             boxShadow: {
                 card: '0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.06)',
             },
